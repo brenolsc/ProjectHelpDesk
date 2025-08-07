@@ -1,0 +1,212 @@
+2025-08-04 20:00:01 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), NULL)
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\xampp\htdocs\advanced\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\xampp\htdocs\advanced\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+)
+
+2025-08-04 19:59:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSExecutionPolicyPreference' => 'Bypass'
+    'PSModulePath' => 'C:\\Users\\breno.coutinho\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'TERM_SESSION_ID' => '323cd73c-7ae8-4da6-9dd2-ab946640b76c'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    'USERNAME' => 'breno.coutinho'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\breno.coutinho'
+    'JETBRAINS_INTELLIJ_COMMAND_END_MARKER' => 'isusjGieTQZG7ZHnM8IN8CytqmBk0eNVIFyosBhhwvqwSas08jPf5ge6erX5yixa'
+    'OS' => 'Windows_NT'
+    'USERDNSDOMAIN' => 'AD.FUNARBE.ORG.BR'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'INTELLIJ_TERMINAL_COMMAND_BLOCKS_REWORKED' => '1'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_REVISION' => 'b701'
+    'PROCESSOR_LEVEL' => '6'
+    'Path' => 'C:\\xampp\\php;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'windir' => 'C:\\Windows'
+    'PROCESS_LAUNCHED_BY_CW' => '1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADFUNARBE'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'ProgramFiles' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\SHARE1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'TEMP' => 'C:\\Users\\BRENO~1.COU\\AppData\\Local\\Temp'
+    'EFC_80976' => '1'
+    'HOMEPATH' => '\\Users\\breno.coutinho'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'PROCESS_LAUNCHED_BY_Q' => '1'
+    'OneDrive' => 'C:\\Users\\breno.coutinho\\OneDrive'
+    'USERDOMAIN' => 'ADFUNARBE'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'FIG_TERM' => '1'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'ADM132'
+    'TMP' => 'C:\\Users\\BRENO~1.COU\\AppData\\Local\\Temp'
+    'LOCALAPPDATA' => 'C:\\Users\\breno.coutinho\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\breno.coutinho\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 183 Stepping 1, GenuineIntel'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1754330397.6313
+    'REQUEST_TIME' => 1754330397
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2025-08-05 19:22:39 [-][-][-][error][ParseError] ParseError: Unclosed '{' on line 6 in C:\xampp\htdocs\advanced\console\migrations\m250805_171903_alter_date_columns_in_project_table.php:24
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(197): yii\console\controllers\BaseMigrateController->includeMigrationFile('m250805_171903_...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration('m250805_171903_...')
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp('m250805_171903_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\advanced\yii(23): yii\base\Application->run()
+#12 {main}
+2025-08-05 19:22:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PSExecutionPolicyPreference' => 'Bypass'
+    'PSModulePath' => 'C:\\Users\\breno.coutinho\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'TERM_SESSION_ID' => '323cd73c-7ae8-4da6-9dd2-ab946640b76c'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    'USERNAME' => 'breno.coutinho'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\breno.coutinho'
+    'JETBRAINS_INTELLIJ_COMMAND_END_MARKER' => 'isusjGieTQZG7ZHnM8IN8CytqmBk0eNVIFyosBhhwvqwSas08jPf5ge6erX5yixa'
+    'OS' => 'Windows_NT'
+    'USERDNSDOMAIN' => 'AD.FUNARBE.ORG.BR'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'INTELLIJ_TERMINAL_COMMAND_BLOCKS_REWORKED' => '1'
+    'NUMBER_OF_PROCESSORS' => '24'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'PROCESSOR_REVISION' => 'b701'
+    'PROCESSOR_LEVEL' => '6'
+    'Path' => 'C:\\xampp\\php;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'windir' => 'C:\\Windows'
+    'PROCESS_LAUNCHED_BY_CW' => '1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADFUNARBE'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'ProgramFiles' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\SHARE1'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'TEMP' => 'C:\\Users\\BRENO~1.COU\\AppData\\Local\\Temp'
+    'EFC_80976' => '1'
+    'HOMEPATH' => '\\Users\\breno.coutinho'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'PROCESS_LAUNCHED_BY_Q' => '1'
+    'OneDrive' => 'C:\\Users\\breno.coutinho\\OneDrive'
+    'USERDOMAIN' => 'ADFUNARBE'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'FIG_TERM' => '1'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'ADM132'
+    'TMP' => 'C:\\Users\\BRENO~1.COU\\AppData\\Local\\Temp'
+    'LOCALAPPDATA' => 'C:\\Users\\breno.coutinho\\AppData\\Local'
+    'APPDATA' => 'C:\\Users\\breno.coutinho\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 183 Stepping 1, GenuineIntel'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1754414557.6784
+    'REQUEST_TIME' => 1754414557
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

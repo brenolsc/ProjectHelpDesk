@@ -1,0 +1,1135 @@
+2025-08-04 19:52:38 [::1][-][kurjpe490mqmnsbtam80psh6uf][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Either GD PHP extension with FreeType support or ImageMagick PHP extension with PNG support is required. in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\captcha\Captcha.php:175
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\captcha\Captcha.php(94): yii\captcha\Captcha::checkRequirements()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\captcha\Captcha->init()
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(425): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\captcha\\Cap...', Array, Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\BaseYii.php(374): yii\di\Container->get('yii\\captcha\\Cap...', Array, Array)
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Widget.php(146): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(797): yii\base\Widget::widget(Array)
+#8 C:\xampp\htdocs\advanced\frontend\views\site\contact.php(33): yii\widgets\ActiveField->widget('yii\\captcha\\Cap...', Array)
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(413): yii\base\View->render('contact', Array, Object(frontend\controllers\SiteController))
+#13 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(134): yii\base\Controller->render('contact', Array)
+#14 [internal function]: frontend\controllers\SiteController->actionContact()
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('contact', Array)
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/contact', Array)
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#21 {main}
+2025-08-04 19:52:38 [::1][-][kurjpe490mqmnsbtam80psh6uf][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5ehd8l5siaf5dp01ikh8dmsh9'
+    '_csrf' => '971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E\";}'
+    'advanced-frontend' => 'kurjpe490mqmnsbtam80psh6uf'
+    'advanced-backend' => '4i9sk0uf3umq2f32qcltd6i20j'
+    '_csrf-backend' => '5dc91a21225c122a66df1ed6d473da1f718efec327fe741f5de7e0d62036158da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"fVyn0-EDO0Ocv0ZDpnRIKWh2KD0kjtl5\";}'
+    '_csrf-frontend' => '22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/help/account-settings'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=h5ehd8l5siaf5dp01ikh8dmsh9; _csrf=971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E%22%3B%7D; advanced-frontend=kurjpe490mqmnsbtam80psh6uf; advanced-backend=4i9sk0uf3umq2f32qcltd6i20j; _csrf-backend=5dc91a21225c122a66df1ed6d473da1f718efec327fe741f5de7e0d62036158da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22fVyn0-EDO0Ocv0ZDpnRIKWh2KD0kjtl5%22%3B%7D; _csrf-frontend=22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC%22%3B%7D'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62405'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/site/contact'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754329958.0663
+    'REQUEST_TIME' => 1754329958
+]
+2025-08-04 19:56:18 [::1][-][kurjpe490mqmnsbtam80psh6uf][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), NULL)
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(402): yii\db\Connection->getSlavePdo(true)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(426): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\BaseYii.php(354): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(261): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(349): yii\db\Connection->getQueryBuilder()
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Query.php(442): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(195): yii\db\Query->exists()
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(153): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#20 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#21 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1130): call_user_func(Object(Closure), Object(yii\db\Connection))
+#22 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(152): yii\db\Connection->useMaster(Object(Closure))
+#23 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#24 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#25 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(48): yii\base\Model->validate()
+#26 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(157): frontend\models\SignupForm->signup()
+#27 [internal function]: frontend\controllers\SiteController->actionSignup()
+#28 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#29 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#30 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('signup', Array)
+#31 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#32 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(402): yii\db\Connection->getSlavePdo(true)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(426): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\BaseYii.php(354): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(261): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(349): yii\db\Connection->getQueryBuilder()
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Query.php(442): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(195): yii\db\Query->exists()
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(153): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#18 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1130): call_user_func(Object(Closure), Object(yii\db\Connection))
+#20 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(152): yii\db\Connection->useMaster(Object(Closure))
+#21 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#22 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#23 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(48): yii\base\Model->validate()
+#24 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(157): frontend\models\SignupForm->signup()
+#25 [internal function]: frontend\controllers\SiteController->actionSignup()
+#26 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('signup', Array)
+#29 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#30 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+)
+
+2025-08-04 19:56:14 [::1][-][kurjpe490mqmnsbtam80psh6uf][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'Fca4Tg1lBxlC_B68GWEQMM_c17WvBoVGZoBluWM-qlt3jc45PUhldCXNas9qBUYAvu-11JxL7zALxSrxCAvYGA=='
+    'SignupForm' => [
+        'username' => 'admin'
+        'email' => 'adminteste@teste.org.br'
+        'password' => '123456789'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5ehd8l5siaf5dp01ikh8dmsh9'
+    '_csrf' => '971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E\";}'
+    'advanced-frontend' => 'kurjpe490mqmnsbtam80psh6uf'
+    'advanced-backend' => '4i9sk0uf3umq2f32qcltd6i20j'
+    '_csrf-frontend' => '22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC\";}'
+    '_csrf-backend' => 'f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"37qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '236'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=h5ehd8l5siaf5dp01ikh8dmsh9; _csrf=971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E%22%3B%7D; advanced-frontend=kurjpe490mqmnsbtam80psh6uf; advanced-backend=4i9sk0uf3umq2f32qcltd6i20j; _csrf-frontend=22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC%22%3B%7D; _csrf-backend=f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2237qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM%22%3B%7D'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62634'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/site/signup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754330174.4074
+    'REQUEST_TIME' => 1754330174
+]
+2025-08-04 20:02:01 [::1][-][kurjpe490mqmnsbtam80psh6uf][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), NULL)
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(402): yii\db\Connection->getSlavePdo(true)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(426): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\BaseYii.php(354): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(261): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(349): yii\db\Connection->getQueryBuilder()
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Query.php(442): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(195): yii\db\Query->exists()
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(153): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#20 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#21 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1130): call_user_func(Object(Closure), Object(yii\db\Connection))
+#22 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(152): yii\db\Connection->useMaster(Object(Closure))
+#23 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#24 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#25 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(48): yii\base\Model->validate()
+#26 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(157): frontend\models\SignupForm->signup()
+#27 [internal function]: frontend\controllers\SiteController->actionSignup()
+#28 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#29 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#30 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('signup', Array)
+#31 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#32 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(402): yii\db\Connection->getSlavePdo(true)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(426): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\BaseYii.php(354): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(261): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(349): yii\db\Connection->getQueryBuilder()
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Query.php(442): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(195): yii\db\Query->exists()
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(153): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#18 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1130): call_user_func(Object(Closure), Object(yii\db\Connection))
+#20 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(152): yii\db\Connection->useMaster(Object(Closure))
+#21 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#22 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#23 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(48): yii\base\Model->validate()
+#24 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(157): frontend\models\SignupForm->signup()
+#25 [internal function]: frontend\controllers\SiteController->actionSignup()
+#26 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('signup', Array)
+#29 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#30 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+)
+
+2025-08-04 20:01:57 [::1][-][kurjpe490mqmnsbtam80psh6uf][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'GvJMAIFv9yjCSbt6iN8Rx_6tDRn3icaBZPnnHlwyP_54uTp3sUKVRaV4zwn7u0f3j55veMTErPcJvKhWNwdNvQ=='
+    'SignupForm' => [
+        'username' => 'admin'
+        'email' => 'adminteste@teste.org.br'
+        'password' => '123456789'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5ehd8l5siaf5dp01ikh8dmsh9'
+    '_csrf' => '971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E\";}'
+    'advanced-frontend' => 'kurjpe490mqmnsbtam80psh6uf'
+    'advanced-backend' => '4i9sk0uf3umq2f32qcltd6i20j'
+    '_csrf-frontend' => '22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC\";}'
+    '_csrf-backend' => 'f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"37qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '236'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=h5ehd8l5siaf5dp01ikh8dmsh9; _csrf=971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E%22%3B%7D; advanced-frontend=kurjpe490mqmnsbtam80psh6uf; advanced-backend=4i9sk0uf3umq2f32qcltd6i20j; _csrf-frontend=22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC%22%3B%7D; _csrf-backend=f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2237qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM%22%3B%7D'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63119'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/site/signup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754330517.7791
+    'REQUEST_TIME' => 1754330517
+]
+2025-08-05 13:27:54 [::1][-][kurjpe490mqmnsbtam80psh6uf][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue), NULL)
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(402): yii\db\Connection->getSlavePdo(true)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(426): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\BaseYii.php(354): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(261): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(349): yii\db\Connection->getQueryBuilder()
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Query.php(442): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#18 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(195): yii\db\Query->exists()
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(153): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#20 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#21 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1130): call_user_func(Object(Closure), Object(yii\db\Connection))
+#22 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(152): yii\db\Connection->useMaster(Object(Closure))
+#23 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#24 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#25 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(48): yii\base\Model->validate()
+#26 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(157): frontend\models\SignupForm->signup()
+#27 [internal function]: frontend\controllers\SiteController->actionSignup()
+#28 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#29 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#30 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('signup', Array)
+#31 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#32 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(402): yii\db\Connection->getSlavePdo(true)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(426): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#8 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->newInstanceArgs(Array)
+#9 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#10 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\BaseYii.php(354): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#11 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(261): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#12 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#13 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#14 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(349): yii\db\Connection->getQueryBuilder()
+#15 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Query.php(442): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#16 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(195): yii\db\Query->exists()
+#17 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(153): yii\validators\UniqueValidator->modelExists('\\common\\models\\...', Array, Object(frontend\models\SignupForm))
+#18 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#19 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\db\Connection.php(1130): call_user_func(Object(Closure), Object(yii\db\Connection))
+#20 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\UniqueValidator.php(152): yii\db\Connection->useMaster(Object(Closure))
+#21 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#22 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#23 C:\xampp\htdocs\advanced\frontend\models\SignupForm.php(48): yii\base\Model->validate()
+#24 C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php(157): frontend\models\SignupForm->signup()
+#25 [internal function]: frontend\controllers\SiteController->actionSignup()
+#26 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('signup', Array)
+#29 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#30 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2advanced'
+)
+
+2025-08-05 13:27:53 [::1][-][kurjpe490mqmnsbtam80psh6uf][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'ui04AMF_VMhw3a9xxZ7CMXMjUxuJ8tXf8c8Dd1sF5-fYZk538VI2pRfs2wK2-pQBAhAxerq_v6mcikw_MDCVpA=='
+    'SignupForm' => [
+        'username' => 'admin'
+        'email' => 'adminteste@teste.org.br'
+        'password' => '123456789'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5ehd8l5siaf5dp01ikh8dmsh9'
+    '_csrf' => '971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E\";}'
+    'advanced-frontend' => 'kurjpe490mqmnsbtam80psh6uf'
+    'advanced-backend' => '4i9sk0uf3umq2f32qcltd6i20j'
+    '_csrf-frontend' => '22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC\";}'
+    '_csrf-backend' => 'f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"37qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '236'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/advanced/frontend/web/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=h5ehd8l5siaf5dp01ikh8dmsh9; _csrf=971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E%22%3B%7D; advanced-frontend=kurjpe490mqmnsbtam80psh6uf; advanced-backend=4i9sk0uf3umq2f32qcltd6i20j; _csrf-frontend=22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC%22%3B%7D; _csrf-backend=f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2237qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM%22%3B%7D'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62370'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/advanced/frontend/web/site/signup'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754393273.9324
+    'REQUEST_TIME' => 1754393273
+]
+2025-08-05 13:43:49 [::1][-][kurjpe490mqmnsbtam80psh6uf][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Wrong verify email token. in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:228
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionVerifyEmail('3DhPcWSFEAVdRds...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('verify-email', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/verify-ema...', Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2025-08-05 13:43:48 [::1][-][kurjpe490mqmnsbtam80psh6uf][info][application] $_GET = [
+    'token' => '3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5ehd8l5siaf5dp01ikh8dmsh9'
+    '_csrf' => '971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E\";}'
+    'advanced-frontend' => 'kurjpe490mqmnsbtam80psh6uf'
+    'advanced-backend' => '4i9sk0uf3umq2f32qcltd6i20j'
+    '_csrf-frontend' => '22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC\";}'
+    '_csrf-backend' => 'f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"37qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=h5ehd8l5siaf5dp01ikh8dmsh9; _csrf=971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E%22%3B%7D; advanced-frontend=kurjpe490mqmnsbtam80psh6uf; advanced-backend=4i9sk0uf3umq2f32qcltd6i20j; _csrf-frontend=22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC%22%3B%7D; _csrf-backend=f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2237qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM%22%3B%7D'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63412'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/verify-email'
+    'REDIRECT_QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'REQUEST_URI' => '/advanced/frontend/web/site/verify-email?token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754394228.8812
+    'REQUEST_TIME' => 1754394228
+]
+2025-08-05 13:46:24 [::1][-][o0jnaihra8kbl69che2jdnu73h][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Wrong verify email token. in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:228
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionVerifyEmail('3DhPcWSFEAVdRds...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('verify-email', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/verify-ema...', Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2025-08-05 13:46:24 [::1][-][o0jnaihra8kbl69che2jdnu73h][info][application] $_GET = [
+    'token' => '3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, application/xml; q=0.9, image/avif, image/webp, image/apng, */*; q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR, pt; q=0.9, en-US; q=0.8, en; q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"126\", \"Chromium\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_X_CUSTOM_TAG' => ''
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63600'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/verify-email'
+    'REDIRECT_QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'REQUEST_URI' => '/advanced/frontend/web/site/verify-email?token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754394384.6259
+    'REQUEST_TIME' => 1754394384
+]
+2025-08-05 13:46:24 [::1][-][cfrl28irerqenq5j4hesak1ugi][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Wrong verify email token. in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:228
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionVerifyEmail('3DhPcWSFEAVdRds...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('verify-email', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/verify-ema...', Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2025-08-05 13:46:24 [::1][-][cfrl28irerqenq5j4hesak1ugi][info][application] $_GET = [
+    'token' => '3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, application/xml; q=0.9, image/avif, image/webp, image/apng, */*; q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR, pt; q=0.9, en-US; q=0.8, en; q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"126\", \"Chromium\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_X_CUSTOM_TAG' => ''
+    'HTTP_HOST' => 'localhost'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63602'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/verify-email'
+    'REDIRECT_QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'REQUEST_URI' => '/advanced/frontend/web/site/verify-email?token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754394384.6926
+    'REQUEST_TIME' => 1754394384
+]
+2025-08-05 13:47:26 [::1][-][kurjpe490mqmnsbtam80psh6uf][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Wrong verify email token. in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:228
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionVerifyEmail('hPcWSFEAVdRdsNf...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('verify-email', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/verify-ema...', Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2025-08-05 13:47:26 [::1][-][kurjpe490mqmnsbtam80psh6uf][info][application] $_GET = [
+    'token' => 'hPcWSFEAVdRdsNf_S537-5okw8pBI6f__1754394103'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5ehd8l5siaf5dp01ikh8dmsh9'
+    '_csrf' => '971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E\";}'
+    'advanced-frontend' => 'kurjpe490mqmnsbtam80psh6uf'
+    'advanced-backend' => '4i9sk0uf3umq2f32qcltd6i20j'
+    '_csrf-frontend' => '22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC\";}'
+    '_csrf-backend' => 'f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"37qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=h5ehd8l5siaf5dp01ikh8dmsh9; _csrf=971bf573d0582720863fc56eafd0594cf3d4053e0f51a0e7d426d4cc67044a45a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aKNTn9G7yh5Mlb53BzKTxPH3gWqSdm2E%22%3B%7D; advanced-frontend=kurjpe490mqmnsbtam80psh6uf; advanced-backend=4i9sk0uf3umq2f32qcltd6i20j; _csrf-frontend=22bcb0448c5a4c94cf37aa9261f02b34d20520a3d2a9c407226c8dacee6ea53da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22bKvw0-bmg1tssdV0q3ba3MjvmEOHk5rC%22%3B%7D; _csrf-backend=f8da168ec578a4937c4c06e1212dc3d702aa894913444cf29289264536f59c01a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2237qlyY76DKEaRk9YdWBYrNkHJ7z-i4MM%22%3B%7D'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63698'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/verify-email'
+    'REDIRECT_QUERY_STRING' => 'token=hPcWSFEAVdRdsNf_S537-5okw8pBI6f__1754394103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'token=hPcWSFEAVdRdsNf_S537-5okw8pBI6f__1754394103'
+    'REQUEST_URI' => '/advanced/frontend/web/site/verify-email?token=hPcWSFEAVdRdsNf_S537-5okw8pBI6f__1754394103'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754394446.6731
+    'REQUEST_TIME' => 1754394446
+]
+2025-08-05 13:49:09 [::1][-][ffpara4kms159nvckgfogun1ds][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Wrong verify email token. in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:228
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionVerifyEmail('3DhPcWSFEAVdRds...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('verify-email', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/verify-ema...', Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2025-08-05 13:49:09 [::1][-][ffpara4kms159nvckgfogun1ds][info][application] $_GET = [
+    'token' => '3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, application/xml; q=0.9, image/avif, image/webp, image/apng, */*; q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR, pt; q=0.9, en-US; q=0.8, en; q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"126\", \"Chromium\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_X_CUSTOM_TAG' => ''
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63837'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/verify-email'
+    'REDIRECT_QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'REQUEST_URI' => '/advanced/frontend/web/site/verify-email?token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754394549.3981
+    'REQUEST_TIME' => 1754394549
+]
+2025-08-05 13:49:09 [::1][-][lhupjmpbg288j3iaf27q9rcbdu][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Wrong verify email token. in C:\xampp\htdocs\advanced\frontend\controllers\SiteController.php:228
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionVerifyEmail('3DhPcWSFEAVdRds...')
+#1 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('verify-email', Array)
+#4 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/verify-ema...', Array)
+#5 C:\xampp\htdocs\advanced\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2025-08-05 13:49:09 [::1][-][lhupjmpbg288j3iaf27q9rcbdu][info][application] $_GET = [
+    'token' => '3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, application/xml; q=0.9, image/avif, image/webp, image/apng, */*; q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR, pt; q=0.9, en-US; q=0.8, en; q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA' => '\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"126\", \"Chromium\";v=\"126\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_X_CUSTOM_TAG' => ''
+    'HTTP_HOST' => 'localhost'
+    'PATH' => 'c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thales.toledo\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\thales.toledo\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;c:\\Users\\thales.toledo\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin;C:\\Users\\breno.coutinho\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\breno.coutinho\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63839'
+    'REDIRECT_URL' => '/advanced/frontend/web/site/verify-email'
+    'REDIRECT_QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'REQUEST_URI' => '/advanced/frontend/web/site/verify-email?token=3DhPcWSFEAVdRdsNf_S5=37-5okw8pBI6f__1754394103'
+    'SCRIPT_NAME' => '/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1754394549.4559
+    'REQUEST_TIME' => 1754394549
+]
