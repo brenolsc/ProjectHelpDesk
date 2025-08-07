@@ -1,0 +1,328 @@
+main > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background-color: #212529;
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+body {
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #143145;
+}
+
+
+
+.site-login h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #ffffff, #212529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(29, 140, 248, 0.6);
+    text-align: center;
+    user-select: none;
+    cursor: default;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Brilho suave animado por trás do texto */
+.site-login h1::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+            135deg,
+            rgba(29, 140, 248, 0.4),
+            rgba(51, 88, 244, 0.1),
+            rgba(29, 140, 248, 0.4)
+    );
+    border-radius: 50px;
+    filter: blur(12px);
+    opacity: 0.7;
+    z-index: -1;
+    animation: brilho-titulo 3s ease-in-out infinite alternate;
+}
+
+@keyframes brilho-titulo {
+    0% {
+        filter: blur(8px);
+        opacity: 0.5;
+    }
+    50% {
+        filter: blur(16px);
+        opacity: 0.9;
+    }
+    100% {
+        filter: blur(8px);
+        opacity: 0.5;
+    }
+}
+
+/* Pequena elevação e sombra no hover */
+.site-login h1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgb(0, 0, 0);
+}
+
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th,
+.grid-view td:last-child {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #7eb5e8, #143145); /* azul degradê */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* botão oval */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #3358f4, #1d8cf8); /* inverte o degradê no hover */
+}
+
+/* Efeito de brilho ao passar o mouse */
+.btn-primary::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.3)
+    );
+    transform: skewX(-25deg);
+}
+
+.btn-primary:hover::after {
+    animation: brilho-passar 0.75s ease-in-out forwards;
+}
+
+@keyframes brilho-passar {
+    from {
+        left: -75%;
+    }
+    to {
+        left: 125%;
+    }
+}
+
+.input-primary {
+    display: block;
+    width: 100%;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #1d8cf8, #3358f4);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.input-primary::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: normal;
+}
+
+.input-primary:focus {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #3358f4, #1d8cf8);
+}
+.site-login label {
+    color: #3358f4;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Container customizado para o checkbox */
+.custom-checkbox {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    user-select: none;
+    color: #ffffff; /* cor azul */
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Esconder o checkbox real */
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Caixa customizada */
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Quando o checkbox está marcado */
+.custom-checkbox input:checked ~ .checkmark {
+    background: linear-gradient(135deg, #3358f4, #1d8cf8);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Ícone do "check" (✓) */
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Hover efeito */
+.custom-checkbox:hover .checkmark {
+    filter: brightness(110%);
+}
+
+/* Foco acessível no checkbox */
+.custom-checkbox input[type="checkbox"]:focus + .checkmark {
+    outline: 3px solid #80bdff;
+    outline-offset: 2px;
+    box-shadow: 0 0 8px rgba(29, 140, 248, 0.7);
+}
+
+/* Para o label mudar cor no foco também */
+.custom-checkbox input[type="checkbox"]:focus ~ span.checkmark,
+.custom-checkbox input[type="checkbox"]:focus ~ span.checkmark + * {
+    color: #143145;
+}
+
+.project-view, .project-form__image {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.project-form__image-container{
+    margin-bottom: 16px;
+}
