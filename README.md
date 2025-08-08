@@ -13,7 +13,7 @@
 ## ⚙️ Tecnologias Utilizadas
 
 - [Yii2 Framework](https://www.yiiframework.com/)
-- PHP 8.x
+- PHP
 - MySQL
 - HTML/CSS (Bootstrap integrado pelo Yii)
 - XAMPP (ambiente local de desenvolvimento)
