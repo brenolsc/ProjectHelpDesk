@@ -6,7 +6,7 @@
     <br>
 </p>
 
-# ProjectHelpDesk
+# ProjectHelpDesk 🛟
 
 **ProjectHelpDesk** é um esboço de um sistema simples de help desk, criado com o framework Yii2. O objetivo deste projeto é servir como base para futuras melhorias e funcionalidades, demonstrando conceitos fundamentais de organização, relacionamento entre modelos e exibição de dados.
 
