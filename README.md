@@ -22,12 +22,14 @@
 
 Este projeto segue a estrutura avançada do Yii2, com separação clara entre frontend, backend e common:
 
+```text
 advanced/
-├── backend/ # Painel administrativo (CRUD dos chamados)
-├── common/ # Modelos compartilhados e configurações
-├── console/ # Scripts de console
-├── frontend/ # (não utilizado no momento)
-├── migrations/ # Migrations do banco de dados
+├── backend/     # Painel administrativo (CRUD dos chamados)
+├── common/      # Modelos compartilhados e configurações
+├── console/     # Scripts de console
+├── frontend/    # (não utilizado no momento)
+├── migrations/  # Migrations do banco de dados
+
 
 
 ## 📌 Funcionalidades até o momento
