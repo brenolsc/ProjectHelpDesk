@@ -28,9 +28,8 @@ advanced/
 ├── common/      # Modelos compartilhados e configurações
 ├── console/     # Scripts de console
 ├── frontend/    # (não utilizado no momento)
-├── migrations/  # Migrations do banco de dados
-
-
+├── migrations/  # Migrations do banco de dados 
+```
 
 ## 📌 Funcionalidades até o momento
 
