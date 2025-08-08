@@ -6,55 +6,71 @@
     <br>
 </p>
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](https://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+# ProjectHelpDesk
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+**ProjectHelpDesk** é um esboço de um sistema simples de help desk, criado com o framework Yii2. O objetivo deste projeto é servir como base para futuras melhorias e funcionalidades, demonstrando conceitos fundamentais de organização, relacionamento entre modelos e exibição de dados.
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+## ⚙️ Tecnologias Utilizadas
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+- [Yii2 Framework](https://www.yiiframework.com/)
+- PHP 8.x
+- MySQL
+- HTML/CSS (Bootstrap integrado pelo Yii)
+- XAMPP (ambiente local de desenvolvimento)
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
+## 📁 Estrutura do Projeto
 
-DIRECTORY STRUCTURE
--------------------
+Este projeto segue a estrutura avançada do Yii2, com separação clara entre frontend, backend e common:
 
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+advanced/
+├── backend/ # Painel administrativo (CRUD dos chamados)
+├── common/ # Modelos compartilhados e configurações
+├── console/ # Scripts de console
+├── frontend/ # (não utilizado no momento)
+├── migrations/ # Migrations do banco de dados
+
+
+## 📌 Funcionalidades até o momento
+
+- Cadastro de projetos (chamados)
+- Visualização detalhada dos chamados
+- Upload e exibição de imagens relacionadas ao chamado (simulado)
+- Campos como nome, descrição, stack tecnológica e data de início
+
+## 🧱 Estrutura do Model Principal
+
+O model `Project` contém campos como:
+
+- `id`
+- `name`
+- `description`
+- `tech_stack`
+- `start_date`
+- Relacionamento com imagens (`hasMany`)
+
+## 🔧 Instalação e Uso
+
+1. Clone o repositório:
+
+bash
+`git clone https://github.com/seu-usuario/ProjectHelpDesk.git`
+
+2. Configure seu ambiente local com o XAMPP ou outro servidor Apache/MySQL.
+
+3. Importe o banco de dados (caso haja um arquivo .sql incluído).
+
+4. Instale as dependências via Composer:
+    `composer install`
+
+5. Ajuste o arquivo common/config/main-local.php com suas credenciais do banco de dados.
+
+6. Acesse pelo navegador:
+   `http://localhost/advanced/backend/web`
+
+🚧 Status do Projeto
+Este projeto ainda está em desenvolvimento e não está completo. Ele serve como esboço inicial para estudo, testes e estruturação de futuras funcionalidades.
+
+🤝 Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias.
+
+
